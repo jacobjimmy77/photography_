@@ -1,0 +1,348 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+/* Initial state: transparent */
+.navbar {
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+    background-color: transparent;
+}
+
+/* Scrolled state: white with a small shadow */
+.navbar.scrolled {
+    background-color: white !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust link colors if they become invisible on white */
+.navbar.scrolled .nav-link {
+    color: black !important;
+}
+
+.custom-nav {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+/* This makes your links white so they show up on the image */
+.custom-nav .nav-link {
+    color: #777 !important;
+    font-weight: 400;
+    padding-top: 10px !important; /* Smaller number = higher up */
+    margin-top: -8px;           /* Negative margin pulls it up further */
+}
+.custom-nav .nav-link{
+    margin-left: -1rem !important;
+}
+.interact .search{
+    margin-left: auto !important;
+    margin-right: -1rem;
+}
+.interact .search:hover{ 
+    background: red !important;
+}
+.custom-nav .nav-link:hover{
+    color: black !important;
+    background: #ccc;
+}
+
+.home-image {
+    position: relative;
+}
+
+.logo {
+    width: max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #212529;
+    padding: 8px 10px;
+    
+}
+.logo h3{
+    letter-spacing: 10px;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.home-image{
+    
+}
+.home-image img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.logo{
+    
+}
+/* -------about section------- */
+#about{
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+}
+.parent{
+    padding: 5% 5%  !important;
+}
+.about1 h1{
+    font-size: 24px;
+    opacity: 80%;
+    margin-bottom: 25px;
+}
+
+.about1 em{
+    font-style: italic;
+}
+.about1 p{
+    text-align: start;
+    opacity: 80%;
+    line-height: 4.5vh;
+    margin-top: 2%;
+}
+
+.about2{
+    padding: 5% 0;
+}
+.name{
+    padding: 0 5%;
+}
+.name img{
+    width: 100%;
+    border-radius: 4px;
+    opacity: 80%;
+}
+.name img:hover{
+    opacity: unset;
+}
+.name h5{
+    padding: 10px 0 25px;
+    font-size: 15px;
+    font-weight: bolder;
+    opacity: 80%;
+}
+.name i{
+    margin-right: 15px;
+}
+.plus-txt{
+    padding: 10px 0;
+    padding-left: 5% !important;
+    opacity: 80%;
+}
+.plus-txt p{
+    text-align: start;
+    line-height: 4.5vh;
+}
+.parent span{
+    font-size: 17px;
+    opacity: 80%;
+}
+.parent .photography, .web-design, .photoshop{
+    width: 100%;
+    height: 35px;
+    background: #f1f1f1;
+    margin-bottom: 3%;
+}
+.photography div{
+    width: 90%;
+    height: 35px;
+    background: #555;
+}
+.web-design div{
+    width: 85%;
+    height: 35px;
+    background: #555;
+}
+.photoshop div{
+    width: 75%;
+    height: 35px;
+    background: #555;
+}
+.range{
+    margin-top: 3%;
+    opacity: 80%;
+}
+.range p{
+    padding-top: 7px;
+    font-weight: bolder;
+    color: white;
+}
+.range h4{
+    text-align: start;
+    font-size: 14px;
+    letter-spacing: 8px;
+}
+.range i{
+    margin-right: 10px;
+}
+/* -----------portfolio------------ */
+.portfolio{
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+
+}
+.banner{
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    background: #555;
+}
+.banner h1{
+    color: white;
+    font-size: 20px;
+    padding: 10% 0;
+}
+.port-img{
+    position: relative;
+}
+.port-img img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.port-txt{
+    position: absolute;
+    top: 50%;         /* Move the top of the box to the middle */
+    left: 50%;        /* Move the left of the box to the middle */
+    transform: translate(-50%, -50%); /* Pull it back by half its own size */
+    color: white;
+    text-align: center;
+    width: 80%;       /* Prevents the text from hitting the image edges */
+}
+.port-txt h1{
+    letter-spacing: 10px;
+}
+
+.my-works{
+    margin-top: 5%;
+}
+.my-works h2{
+    font-size: 23px;
+    opacity: 80%;
+    font-weight: 100;
+}
+.my-works p{
+    font-style: italic;
+    font-size: 15px;
+    opacity: 80%;
+    padding: 15px;
+}
+
+.work-img{
+    
+
+}
+.work-img div{
+    margin-bottom: 20px;
+}
+.work-img div:hover{
+    opacity: 80%;
+}
+.work-img img{
+    width: 100%;
+}
+.more-btn{
+    margin: 4%;
+    padding: 12px 24px !important;
+}
+.more-btn:hover{
+    background: #666;
+}
+/* --------contacts------- */
+.contact-img{
+    position: relative;
+}
+.contact-img img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.contact-img div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.contact-img div h1{
+    letter-spacing: 10px;
+}
+.contact{
+    
+}
+.contact h1{
+    font-size: 25px;
+
+}
+.contact p{
+    font-style: italic;
+}
+.contact .map img{
+    max-width: 100% !important;
+}
+.contact-info{
+    text-align: start;
+}
+.contact-info ul li{
+    list-style: none;
+    font-size: 20px;
+    padding: 5px 0;
+
+}
+.contact-info ul i{
+    margin-right: 8px;
+}
+.contact-info p{
+    font-style: italic;
+}
+/* ------footer--------- */
+.footer{
+    width: 100vw;
+    height: 220px;
+    background: #666;
+}
+.footer div{
+    color: white;
+}
+.footer .btn{
+    margin-top: 5%;
+    padding: 10px 15px;
+    color: #666;
+    background: white;
+}
+.footer div span p{
+    margin-top: 10px;
+    font-size: 22px;
+}
+.footer div span p i:hover{
+    color: #666;
+}
+.footer:hover{
+    background: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------for smaller screen----------- */
