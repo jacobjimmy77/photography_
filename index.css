@@ -15,8 +15,6 @@ html, body{
     background-color: white !important;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-
-/* Adjust link colors if they become invisible on white */
 .navbar.scrolled .nav-link {
     color: black !important;
 }
@@ -25,19 +23,21 @@ html, body{
     background-color: transparent !important;
     border: none !important;
 }
-
-/* This makes your links white so they show up on the image */
 .custom-nav .nav-link {
     color: #777 !important;
     font-weight: 400;
     padding-top: 10px !important; /* Smaller number = higher up */
     margin-top: -8px;           /* Negative margin pulls it up further */
 }
+.hamburger  i{
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding-left: 50px;
+}
 .custom-nav .nav-link{
     margin-left: -1rem !important;
 }
 .interact .search{
-    margin-left: auto !important;
     margin-right: -1rem;
 }
 .interact .search:hover{ 
@@ -69,17 +69,10 @@ html, body{
     text-align: center;
     padding: 0 10px;
 }
-
-.home-image{
-    
-}
 .home-image img{
     width: 100%;
     height: 400px;
     object-fit: cover;
-}
-.logo{
-    
 }
 /* -------about section------- */
 #about{
@@ -104,7 +97,6 @@ html, body{
     line-height: 4.5vh;
     margin-top: 2%;
 }
-
 .about2{
     padding: 5% 0;
 }
@@ -184,7 +176,6 @@ html, body{
     width: 100% !important;
     padding: 0 !important;
     margin: 0 !important;
-
 }
 .banner{
     width: 100% !important;
@@ -232,11 +223,6 @@ html, body{
     opacity: 80%;
     padding: 15px;
 }
-
-.work-img{
-    
-
-}
 .work-img div{
     margin-bottom: 20px;
 }
@@ -272,12 +258,8 @@ html, body{
 .contact-img div h1{
     letter-spacing: 10px;
 }
-.contact{
-    
-}
 .contact h1{
     font-size: 25px;
-
 }
 .contact p{
     font-style: italic;
@@ -292,13 +274,15 @@ html, body{
     list-style: none;
     font-size: 20px;
     padding: 5px 0;
-
 }
 .contact-info ul i{
     margin-right: 8px;
 }
 .contact-info p{
     font-style: italic;
+}
+.submitBtn{
+    
 }
 /* ------footer--------- */
 .footer{
@@ -326,23 +310,9 @@ html, body{
     background: black;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ---------for smaller screen----------- */
+@media only screen and (max-width: 600px){
+    .footer .btn{
+        margin-top: 15%;
+    }
+}

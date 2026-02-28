@@ -15,17 +15,22 @@
 <!-- ------Home section------- -->
 <section id="home-page">
     <nav id="mainNav" class="navbar navbar-expand-sm fixed-top custom-nav navbar-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon ml-auto"></span>
-        </button>
+        <a class="nav-item nav-link active mx-lg-4 mx-md-4 px-3" href="#">HOME<span class="sr-only">(current)</span></a>
+        <a class="navbar-toggler ml-auto border-0 shadow-none hamburger" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fa-solid fa-bars"></i></span>
+        </a>
         <div class="collapse navbar-collapse interact" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active mx-lg-4 mx-md-4 px-3" href="#">HOME<span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link mx-lg-4 mx-md-4  px-3" href="#about"><i class="fa-solid fa-user"></i>ABOUT</a>
-                <a class="nav-item nav-link mx-lg-4 mx-md-4 px-3" href="#my-works"><i class="fa-solid fa-grip"></i>PORTFOLIO</a>
-                <a class="nav-item nav-link mx-lg-4 mx-md-4 px-3" href="#contact"><i class="fa-solid fa-envelope"></i>CONTACT</a>     
+                <a class="nav-item nav-link mx-lg-3 mx-md-4 px-3 d-flex align-items-center" href="#about"><i class="fa-solid fa-user d-none d-sm-block"></i>ABOUT</a>
+                <a class="nav-item nav-link mx-lg-3 mx-md-4 px-3 d-flex align-items-center" href="#my-works"><i class="fa-solid fa-grip d-none d-sm-block"></i>PORTFOLIO</a>
+                <a class="nav-item nav-link mx-lg-3 mx-md-4 px-3 d-flex align-items-center" href="#contact"><i class="fa-solid fa-envelope d-none d-sm-block"></i>CONTACT</a>
+                <a class="nav-item nav-link d-sm-none mx-lg-4 mx-md-4 px-3 " href="#">SEARCH</a> 
             </div>
-                <a class="nav-item nav-link search" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>    
+                  
+            <div class="ml-auto">
+                <a class="nav-item nav-link search d-none d-sm-block" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            
         </div>
     </nav>
     <div class="home-image text-center">
@@ -42,7 +47,6 @@
             </div>
     </div>
 </section>
-
 <!-- ---------About section--------- -->
 <section id="about">
     <div class="text-center container parent">
@@ -162,7 +166,7 @@
                         <img src="images/work-images/p8.jpg" alt="">
                     </div>
                 </div>
-                <button type="button" class="btn more-btn">LOAD MORE</button>
+                <button type="button" class="btn more-btn mb-5">LOAD MORE</button>
             </div>
 </section>
 <section>
@@ -179,12 +183,12 @@
     
     <div class="row ml-auto g-2">
         <!-- Map Column -->
-        <div class="map col-lg-3">
+        <div class="map col-lg-3 mr-2">
             <img src="images/body-images/map.jpg" class="" alt="Map">
         </div>
         
         <!-- Contact Info Column -->
-        <div class="contact-info col-lg-8 p-4 text-start">
+        <div class="contact-info col-lg-8 p-4">
             <ul class="list-unstyled">
                 <li><i class="fa-solid fa-location-dot me-2"></i>Chicago, USA</li>
                 <li><i class="fa-solid fa-phone me-2"></i>Phone: +00 15454</li>
@@ -193,16 +197,18 @@
             <p>Swing by for a cup of <i class="fa-solid fa-mug-saucer"></i>, or leave me a note:</p>
             
             <form>
-                <div class="row g-2 ">
+                <div class="row g-2">
                     <div class="col-sm-6 mb-1">
-                        <input type="text" class="form-control" placeholder="Name">
+                        <input type="text" class="form-control" placeholder="Name" required>
                     </div>
                     <div class="col-sm-6 mb-1">
-                        <input type="email" class="form-control" placeholder="Email">
+                        <input type="email" class="form-control" placeholder="Email" required>
                     </div>
                 </div>
-                <textarea class="form-control mb-3" rows="2" placeholder="Message"></textarea>
-                <button type="submit" class="btn btn-dark w-100">SEND MESSAGE</button>
+                    <textarea class="form-control mb-3" rows="2" placeholder="Message"></textarea>
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-dark">SEND MESSAGE</button>
+                </div>
             </form>
         </div>
     </div>
@@ -227,12 +233,6 @@
         </div>
     </div>
 </section>
-
-
-
-
-
-
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
